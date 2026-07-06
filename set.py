@@ -54,6 +54,22 @@ a={3,4,5,6}
 b={6,7,8}
 print(b.difference(a))
 
+#issubset==it means all element are present or not
+a={1,2}
+b={2,3,1}
+print(a.issubset(b)) 
+print(b.issubset(a))
+
+#issuperset==it means all element+extra element
+a={1,2,3}
+b={1,2}
+print(a.issuperset(b))
+print(b.issuperset(a))
+
+#isdisjoint==checks wheteher two set have common element or not
+a={1,2}
+b={3,4}
+print(a.isdisjoint(b))
 
 
 
