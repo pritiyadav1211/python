@@ -286,6 +286,29 @@ def display():
 
 display()
 
+#NESTED FUNCTION
+# a function inside another function
+# . the outer function is called tje outer function.
+#syntax
+#def outer_function():
+#    def inner_function():
+#     statements
+#inner_function
+
+def outer():
+    print("this is the outer function.")
+    def inner():
+        print("this is the inner function")
+    inner()
+outer()
+
+def outer():
+    def inner():
+        print("hello")
+    inner()
+outer()  #correct
+inner()  #error
+
 
 
  
